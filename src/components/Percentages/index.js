@@ -1,1 +1,0 @@
-export { Percentages } from './Percentages';

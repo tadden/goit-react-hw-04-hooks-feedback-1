@@ -1,24 +1,14 @@
-import PropTypes from 'prop-types';
+import { Button } from '../Button';
 import s from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ options, handleFeedback }) => (
-  <div className={s.controls}>
-    {options.map(type => (
-      <button
-        key={type}
-        className={s[type]}
-        type='button'
-        onClick={() => handleFeedback(type)}
-      >
-        {type}
-      </button>
-    ))}
-  </div>
-);
-
-FeedbackOptions.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
-  handleFeedback: PropTypes.func.isRequired,
-};
+function FeedbackOptions({ onGoodFeedback, onNeutralFeedback, onBadFeedback }) {
+  return (
+    <div className={s.controls}>
+      <Button option='good' onClick={onGoodFeedback} />
+      <Button option='neutral' onClick={onNeutralFeedback} />
+      <Button option='bad' onClick={onBadFeedback} />
+    </div>
+  );
+}
 
 export { FeedbackOptions };

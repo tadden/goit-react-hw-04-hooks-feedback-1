@@ -1,5 +1,6 @@
 :root {
-  --white-color: white;
+  --text-color: #181818;
+  --white-color: #fff;
   --good-color: #4d8679;
   --neutral-color: #788b8c;
   --bad-color: #f07878;
@@ -11,7 +12,7 @@
 
 body {
   margin: 0;
-  color: #181818;
+  color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

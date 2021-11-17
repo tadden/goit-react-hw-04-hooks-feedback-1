@@ -2,39 +2,3 @@
   display: flex;
   justify-content: space-around;
 }
-
-.button {
-  min-width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  text-transform: capitalize;
-  color: var(--white-color);
-  box-shadow: var(--shadow);
-  opacity: 0.86;
-  transition: opacity var(--animation);
-}
-
-.button:hover,
-.button:focus {
-  opacity: 1;
-}
-
-.good,
-.neutral,
-.bad {
-  composes: button;
-}
-
-.good {
-  background-color: var(--good-color);
-}
-
-.neutral {
-  background-color: var(--neutral-color);
-}
-
-.bad {
-  background-color: var(--bad-color);
-}
